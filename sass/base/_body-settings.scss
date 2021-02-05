@@ -1,0 +1,25 @@
+body {
+  font-family: $mainFont;
+  background-color: var(--white-background-color);
+  color: var(--main-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+ul,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}

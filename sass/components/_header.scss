@@ -1,0 +1,9 @@
+.container {
+  @extend %container;
+}
+
+.header {
+  background-color: $headerColor;
+  height: 80px;
+  border-bottom: solid 1px $headerBorderColor;
+}
