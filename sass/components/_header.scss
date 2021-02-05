@@ -4,27 +4,37 @@
 
 .header {
   background-color: $headerColor;
-  height: 80px;
   border-bottom: solid 1px $headerBorderColor;
-  &__logo {
-    color: $mainTextColor;
-    font-family: $secondaryFont;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-  }
-  &__nav {
-    display: flex;
-    align-items: center;
-  }
-  &__items {
-    display: flex;
-    align-items: center;
-    margin-left: 90px;
-    font-family: $mainFont;
-    line-height: 1.14;
-  }
-  &__link:not(:last-child) {
-    margin-right: 50px;
+}
+
+.header__centered {
+  display: flex;
+  justify-content: baseline;
+}
+
+.header__logo {
+  color: $mainTextColor;
+  font-family: $secondaryFont;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.header__items {
+  display: flex;
+  margin-left: 90px;
+}
+
+.header__link {
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  margin-right: 50px;
+
+  &:last-child {
+    margin-right: 0;
   }
 }
