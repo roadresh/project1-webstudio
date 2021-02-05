@@ -6,4 +6,25 @@
   background-color: $headerColor;
   height: 80px;
   border-bottom: solid 1px $headerBorderColor;
+  &__logo {
+    color: $mainTextColor;
+    font-family: $secondaryFont;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
+  &__items {
+    display: flex;
+    align-items: center;
+    margin-left: 90px;
+    font-family: $mainFont;
+    line-height: 1.14;
+  }
+  &__link:not(:last-child) {
+    margin-right: 50px;
+  }
 }
